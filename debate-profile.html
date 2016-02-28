@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap For Beginners</title>
+	<meta name="description" content="Hello World">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="css/debate.css">
+    <link href="css/bootstrap-switch.css" rel="stylesheet">
+
+</head>
+
+<body>
+     
+    <header>
+    </header>
+    
+    <div class="container margin-top padding-left-right">
+        <div class="row">
+            <div class="col-xs-3 col-md-3">
+                <a href="..." class="thumbnail">
+                    <img src="images/16.jpg" alt="...">
+                </a>
+            </div>
+            
+            
+            
+            <div class="col-xs-9">
+                <h2>Someone's Name</h2>
+                <h5 class="help-block">This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry.</h5>
+                <table class="table table-bordered text-center">
+                    <tr>
+                        <td><a href="#posts">posts <span class="glyphicon glyphicon-th" aria-hidden="true"></span>(20)</a></td>
+                        <td><a href="...">rebuttals <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span>(30)</a></td>
+                        <td><a href="">followers <span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>(50)</td>
+                    </tr>
+                </table>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#NewDebate">New Debate</button>
+                
+                <div class="modal" id="NewDebate">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h3 class="modal-title">New Debate</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="Topic" class="col-sm-2 control-label">Topic</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="5" id="Topic">Topic</textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="col-sm-12">
+                                        <h4>Column Titles</h4>
+                                    </div>
+                                </div>
+                                
+                                    <div class="form-group">
+                                        <div class="col-sm-12">
+                                    <textarea class="form-control" rows="2" placeholder="for"></textarea>
+                                        </div>
+                                    </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12 text-center">
+                                        <label class="">VS.</label>
+                                    </div>
+                                </div>
+                                
+                                <div class=" form-group">
+                                        <div class="col-sm-12">
+                                    <textarea class="form-control" rows="2" placeholder="against"></textarea>
+                                        </div>
+                                    </div>
+                                
+                                <div class="form-group">
+                                    <label for="Tags" class="col-sm-2 control-label">Tags</label> 
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" id="Tags">Tags</textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="People" class="col-sm-2 control-label">Add people</label> 
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" rows="3" id="People">Add People</textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="ClosedDiscussion" class="col-sm-2 control-label">Closed Discussion?</label> 
+                                    <div class="col-sm-10">
+                                        <input type="checkbox" id="ClosedDiscussion" name="ClosedDiscussion" checked>
+                                    </div>
+                                </div>
+                                
+                                    
+                                    
+                                
+                            </form>
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <a href="" class="btn btn-default" data-dismiss="modal">Close</a>
+                            <a href="" class="btn btn-primary" >Submit</a>
+                        </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container padding-left-right" id="posts">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Posts</h2>
+            </div>
+            <div class="panel-body">
+        <div class="row ">
+            <div class="col-xs-12 col-md-12 ">
+                <div class="media border-bottom-shadow">
+                    
+                  <div class="media-middle">
+                    <div class="col-xs-1 text-center">
+                                    <div>
+                                        <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-menu-up " aria-hidden="true"></span></li>
+                                    <li class="list-group-item"><span>45</span></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-menu-down " aria-hidden="true"></span></li>
+                                            </ul>
+                                    </div>
+                                   
+                                </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry.</h4>
+                      <span class="label label-info">tag1</span>
+                                    <span class="label label-info">someone'sfood</span>
+                                    <span class="label label-info">bored</span>
+                    
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="panel-body">
+        <div class="row ">
+            <div class="col-xs-12 col-md-12 ">
+                <div class="media border-bottom-shadow">
+                    
+                  <div class="media-middle">
+                    <div class="col-xs-1 text-center">
+                                    <div>
+                                        <ul class="list-group">
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-menu-up " aria-hidden="true"></span></li>
+                                    <li class="list-group-item"><span>45</span></li>
+                                    <li class="list-group-item"><span class="glyphicon glyphicon-menu-down " aria-hidden="true"></span></li>
+                                            </ul>
+                                    </div>
+                                   
+                                </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry. This is the description ofsomeone. Someone is boring and hungry. So so Hungry.</h4>
+                      <span class="label label-info">tag1</span>
+                                    <span class="label label-info">someone'sfood</span>
+                                    <span class="label label-info">bored</span>
+                    
+                  </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    
+    
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    
+		<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="JS/bootstrap-switch.js"></script>
+
+    <script>
+        $("[name='ClosedDiscussion']").bootstrapSwitch();
+    </script>
+</body>	
+</html>
